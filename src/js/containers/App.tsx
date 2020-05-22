@@ -22,9 +22,12 @@ const App: FunctionComponent = () => {
       key: 'operation',
       render: (value: string): ReturnType<FunctionComponent> => {
         return (
-          <ButtonModal>
-            <Table columns={columns} data={data} />
-          </ButtonModal>
+          <Fragment>
+            {/* <button /> */}
+            <ButtonModal>
+              <Table columns={columns} data={data} />
+            </ButtonModal>
+          </Fragment>
         )
       },
     },
